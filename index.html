@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fuego & Carbón</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="header">
+    <div class="header-inner">
+      <div class="logo">
+        <span>FUEGO & CARBÓN</span>
+      </div>
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#menu">Especialidades</a></li>
+          <li><a href="#reservas" class="nav-btn-highlight">Reservaciones</a></li>
+          <li><a href="#cortes">Cortes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- CARRUSEL -->
+    <section class="hero-section">
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1558030006-450675393462?auto=format&fit=crop&w=1000&q=80" alt="Corte Tomahawk">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1000&q=80" alt="Hamburguesa Fuego">
+          </div>
+          <div class="carousel-slide">
+            <img src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1000&q=80" alt="Costillas BBQ">
+          </div>
+        </div>
+
+        <button class="carousel-btn prev" id="carouselPrev">&#10094;</button>
+        <button class="carousel-btn next" id="carouselNext">&#10095;</button>
+      </div>
+
+      <!-- ESTADÍSTICAS (FUERA DE LA IMAGEN) -->
+      <div class="hero-info">
+        <p class="hero-slogan">Donde la pasión se convierte en sabor.</p>
+        <div class="hero-stats">
+          <div class="stat-item">
+            <span class="stat-num">+100%</span>
+            <span class="stat-label">Cortes Premium</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">+20</span>
+            <span class="stat-label">Especialidades</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-num">+500</span>
+            <span class="stat-label">Clientes / mes</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TARJETAS CON IMÁGENES -->
+    <section class="cards-section">
+      <div class="cards-container">
+        <article class="feature-card">
+          <div class="card-img" id="img-cortes"></div>
+          <div class="card-body">
+            <h3>Cortes Premium</h3>
+            <p>Contamos con los mejores cortes de res madurados y seleccionados para garantizar una jugosidad y textura inigualables en tu mesa.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="card-img" id="img-especialidades"></div>
+          <div class="card-body">
+            <h3>Especialidades</h3>
+            <p>Recetas exclusivas preparadas a las brasas de carbón natural, combinando ingredientes frescos y nuestro sazón secreto.</p>
+          </div>
+        </article>
+
+        <article class="feature-card">
+          <div class="card-img" id="img-instalaciones"></div>
+          <div class="card-body">
+            <h3>Instalaciones</h3>
+            <p>Contamos con un ambiente cálido, moderno y acogedor para que disfrutes de una experiencia gastronómica única con tu familia.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- SUSCRIPCIÓN -->
+    <section class="subscribe-section">
+      <div class="subscribe-container">
+        <div class="subscribe-text">
+          <h3>¡No te pierdas lo último!</h3>
+          <p>Suscríbete para recibir promociones y cortesías exclusivas.</p>
+        </div>
+        <div class="subscribe-form">
+          <input type="email" placeholder="Tu correo electrónico">
+          <button type="button">Suscribirme</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="main-footer">
+    <div class="social-banner">
+      <div class="social-icons">
+        <a href="https://www.instagram.com/cesar.r___?igsi=ZzZobzUxczl3aHg3&utm_source=qr" target="_blank" rel="noopener noreferrer" class="social-link">Instagram</a>
+        <a href="#" class="social-link">Facebook</a>
+        <a href="#" class="social-link">TikTok</a>
+        <a href="#" class="social-link">WhatsApp</a>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <p>© FUEGO & CARBÓN</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
