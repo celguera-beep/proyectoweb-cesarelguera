@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -47,6 +51,11 @@ body {
   text-decoration: none;
   font-size: 0.88rem;
   font-weight: 500;
+  transition: color 0.2s ease;
+}
+
+.main-nav ul li a:hover {
+  color: #ffffff;
 }
 
 .main-nav ul li a.nav-btn-highlight {
@@ -55,6 +64,10 @@ body {
   padding: 8px 18px;
   border-radius: 20px;
   font-weight: 600;
+}
+
+.main-nav ul li a.nav-btn-highlight:hover {
+  background-color: #388e3c;
 }
 
 /* CARRUSEL */
@@ -257,38 +270,82 @@ body {
   cursor: pointer;
 }
 
-/* FOOTER */
+/* FOOTER / CONTACTO */
 .main-footer {
   width: 100%;
-  margin-top: 50px;
+  background-color: #121417;
+  padding: 50px 20px 30px;
+  margin-top: 40px;
+  border-top: 1px solid #2a2e33;
 }
 
-.social-banner {
-  width: 100%;
-  background-color: #2e7d32;
-  padding: 15px 0;
+.footer-container {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact-title {
+  color: #f57c00;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+.contact-detail {
+  font-size: 0.95rem;
+  color: #e0e0e0;
+  margin-bottom: 12px;
   display: flex;
+  align-items: center;
   justify-content: center;
+  gap: 8px;
+}
+
+.contact-detail .icon {
+  color: #f57c00;
+  font-size: 1.1rem;
+}
+
+.link-clickable {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.2s ease, text-decoration 0.2s ease;
+}
+
+.link-clickable:hover {
+  color: #f57c00;
+  text-decoration: underline;
 }
 
 .social-icons {
   display: flex;
-  gap: 20px;
+  justify-content: center;
+  gap: 15px;
+  margin: 25px 0;
 }
 
-.social-link {
-  color: #ffffff;
+.social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 50%;
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.85rem;
-  padding: 4px 12px;
-  border-radius: 4px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.1);
+  background-color: #f57c00;
+  color: #ffffff;
 }
 
 .footer-copyright {
-  background-color: #121417;
-  text-align: center;
-  padding: 15px;
-  font-size: 0.75rem;
-  color: #6b7280;
+  margin-top: 30px;
+  font-size: 0.78rem;
+  color: #888888;
 }
